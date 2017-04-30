@@ -1,0 +1,54 @@
+@media screen and(min-width: 961px) {
+
+  html {
+    font-size: 62.5%;
+  }
+}
+
+@media screen and(min-width: 481px) and(max-width: 960px) {
+
+  html {
+    font-size: 56.25%;
+  }
+}
+
+@media screen and(max-width: 480px) {
+
+  html {
+    font-size: 50%;
+  }
+}
+
+body {
+  font-family: 'Roboto', 'Arial', sans-serif;
+  background-color: @colorWhite;
+  color: @colorBlack;
+  margin: 0;
+  font-size: 1.6rem;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-overflow-scrolling: touch;
+}
+
+@import 'variables.less';
+@import 'typographics/links.less';
+@import 'typographics/titles.less';
+@import 'typographics/paragraphs.less';
+@import 'layout/page.less';
+@import 'layout/header.less';
+@import 'layout/main-container';
+@import 'layout/section.less';
+@import 'layout/footer.less';
+@import 'blocks/menu.less';
+@import 'blocks/banner.less';
+@import 'blocks/stat.less';
+@import 'blocks/project.less';
+@import 'blocks/article.less';
+@import 'blocks/tag.less';
+@import 'blocks/map.less';
+
+img {
+  max-width: 100%;
+  height: auto;
+}

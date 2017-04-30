@@ -1,0 +1,81 @@
+.stat {
+  margin-bottom: 2.5rem;
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.stat__name {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 1.2rem;
+}
+
+.stat__value {
+  overflow: hidden;
+  width: 100%;
+  height: 3rem;
+  background-color: @colorGray;
+}
+
+.stat__bar {
+  height: 100%;
+  text-indent: -9999px;
+  animation: bar-filling 1.5s linear;
+}
+
+.stat__bar_90 {
+  width: 90%;
+}
+
+.stat__bar_85 {
+  width: 85%;
+}
+
+.stat__bar_95 {
+  width: 95%;
+}
+
+.stat__bar_blue {
+  background-color: @colorMain;
+}
+
+.stat__bar_green {
+  background-color: @colorBar;
+}
+
+.stat__bar_yellow {
+  background-color: @colorAlternative;
+}
+
+@keyframes bar_90 {
+
+  to {
+    transform: translateX(-10%);
+  }
+}
+
+@keyframes bar_85 {
+
+  to {
+    transform: translateX(-15%);
+  }
+}
+
+@keyframes bar_95 {
+
+  to {
+    transform: translateX(-5%);
+  }
+}
+
+@keyframes bar-filling {
+
+  from {
+    transform: translateX(-100%);
+  }
+
+  to {
+    transform: translateX(0);
+  }
+}

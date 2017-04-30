@@ -1,0 +1,119 @@
+.article {
+  font-size: 1.6rem;
+  margin-top: 30px;
+  &:first-child {
+    margin-top: 0;
+  }
+}
+
+.article__picture {
+  margin-bottom: 20px;
+}
+
+.article__title {
+  margin-bottom: 2.5rem;
+}
+
+.article__date {
+  text-align: center;
+  font-size: 1.4rem;
+}
+
+.article__day {
+  display: block;
+  background-color: @colorGray;
+  line-height: 4.2rem;
+}
+
+.article__month {
+  display: block;
+  background-color: @colorMain;
+  line-height: 2.8rem;
+  color: @colorWhite;
+}
+
+.article__month_main {
+  padding-left: 4.7rem;
+  padding-right: 4.7rem;
+}
+
+.article__month_secondary {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.article__addition {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 1.5rem;
+  font-size: 1.4rem;
+  line-height: 2rem;
+}
+
+.article__author {
+  margin-right: 1rem;
+}
+
+.adticle__addition-label {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.article__author-icon {
+  text-indent: -9999px;
+  height: 1.6rem;
+  width: 1.5rem;
+  background: url("../img/person.svg") no-repeat;
+  background-size: contain;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: .3rem;
+}
+
+.article__tags {
+  line-height: 2.5rem;
+}
+
+.article__tags-icon {
+  text-indent: -9999px;
+  height: 1.3rem;
+  width: 1.3rem;
+  background: url("../img/tag.svg") no-repeat;
+  background-size: contain;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: .3rem;
+}
+
+@media screen and(min-width: 481px) {
+
+  .article_secondary {
+    width: 49%;
+  }
+
+  .article__content {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .article__post {
+    width: 85%;
+  }
+
+  .article__date {
+    margin-right: 1rem;
+  }
+}
+
+@media screen and(max-width: 480px) {
+
+  .article_secondary {
+    padding-top: 1.8rem;
+    box-shadow: 0 -2px @colorGray;
+  }
+
+  .article__date {
+    margin-bottom: 1.5rem;
+  }
+}

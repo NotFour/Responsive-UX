@@ -1,0 +1,13 @@
+.link {
+  text-decoration: none;
+  cursor: pointer;
+  color: @colorBlack;
+  display: inline-block;
+  transition: color 0.3s linear;
+  &:hover {
+    color: @colorMain;
+  }
+  &:focus {
+    outline: 2px solid @colorAlternative;
+  }
+}

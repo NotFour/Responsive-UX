@@ -1,0 +1,6 @@
+.idea/*
+*.json
+node_modules/*
+*.config
+*.psd
+/*.jpg

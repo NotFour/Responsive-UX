@@ -1,0 +1,66 @@
+.banner {
+  background-color: @colorMain;
+  text-align: center;
+}
+
+.banner__caption {
+  font-style: italic;
+  color: @colorWhite;
+}
+
+@media screen and(min-width: 481px) {
+
+  .banner {
+    padding-top: 60px;
+    padding-bottom: 45px;
+  }
+
+  .banner__caption {
+    display: inline-block;
+    font-size: 4.6rem;
+    line-height: 7.5rem;
+  }
+}
+
+@media screen and(min-width: 961px) {
+
+  .banner__preview {
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  .banner__caption {
+    width: 435px;
+    vertical-align: middle;
+    text-align: left;
+  }
+}
+
+@media screen and(min-width: 481px) and(max-width: 960px) {
+
+  .banner__caption {
+    width: 430px;
+  }
+}
+
+@media screen and(max-width: 480px) {
+
+  .banner {
+    padding-top: 30px;
+    padding-bottom: 25px;
+  }
+
+  .banner__image {
+    width: 80%;
+  }
+
+  .banner__preview {
+    text-align: center;
+  }
+
+  .banner__caption {
+    display: block;
+    font-size: 3.5rem;
+    line-height: 6rem;
+  }
+}
