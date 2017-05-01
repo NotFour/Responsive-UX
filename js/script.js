@@ -9,14 +9,13 @@ toggle.onclick = function () {
         toggleInner.classList.remove('menu__toggle-label_active');
         this.classList.remove('menu__toggle_active');
         menu.classList.remove('menu_active');
-        html.
-        html.setAttribute('style', 'overflow:hidden');
+        //html.setAttribute('style', 'overflow:hidden');
     } else {
         menu.classList.add('menu_active');
         this.classList.add('menu__toggle_active');
         toggleInner.classList.add('menu__toggle-label_active');
         menuList.classList.add('menu__list_active');
-        html.removeAttribute('style');
+       // html.removeAttribute('style');
     }
 };
 
@@ -32,3 +31,5 @@ for (var i = 0; i < menuLink.size; i++) {
         }
     }
 }
+
+//AIzaSyA7vAfPUnLBpuLbxw41HSuM4zsAGOKAcvw мой ключ апи  var uluru = {lat: 57.048671, lng: 9.9201409};

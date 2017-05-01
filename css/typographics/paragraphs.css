@@ -1,0 +1,7 @@
+p {
+  line-height: 2.25em;
+  margin-bottom: 0.5em;
+}
+p:last-child {
+  margin-bottom: 0;
+}

@@ -1,18 +1,18 @@
-@media screen and(min-width: 961px) {
+@media screen and(min-device-width: 961px) {
 
   html {
     font-size: 62.5%;
   }
 }
 
-@media screen and(min-width: 481px) and(max-width: 960px) {
+@media screen and(min-device-width: 481px) and(max-device-width: 960px) {
 
   html {
     font-size: 56.25%;
   }
 }
 
-@media screen and(max-width: 480px) {
+@media screen and(max-device-width: 480px) {
 
   html {
     font-size: 50%;
@@ -31,6 +31,11 @@ body {
   -webkit-overflow-scrolling: touch;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 @import 'variables.less';
 @import 'typographics/links.less';
 @import 'typographics/titles.less';
@@ -47,8 +52,3 @@ body {
 @import 'blocks/article.less';
 @import 'blocks/tag.less';
 @import 'blocks/map.less';
-
-img {
-  max-width: 100%;
-  height: auto;
-}

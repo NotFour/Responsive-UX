@@ -60,13 +60,14 @@
                         documentation is qualitative, which will help you to use it.
                     </p>
                 </div>
-                <script src="js/progressBar.js"></script>
                 <div class="section__about-stats">
                     <div class="stat">
                         <span class="stat__name">Documentation</span>
-                        <progress id="progress" value="0" max="100" class="stat__value stat__bar_blue">
-                            <span>90%</span>
-                        </progress>
+                        <div class="stat__value">
+                            <div class="stat__bar stat__bar_blue stat__bar_90">
+                                <span>90%</span>
+                            </div>
+                        </div>
                     </div>
                     <div class="stat">
                         <span class="stat__name">Design</span>
@@ -306,34 +307,19 @@
             </div>
         </div>
     </section>
-    <iframe class="google-map"
-            src="https://www.google.com/maps/embed?pb=!1m22!1m12!1m3!1d583.165200734919!2d9.919744367977883!3d57
-            .048580267848244!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m7!3e6!4m0!4m4!2s57.0486316%2C9.9202333!3m
-            2!1d57.0486316!2d9.9202333!5e0!3m2!1sru!2sru!4v1484508915242" id="contacts"></iframe>
+    <div class="google-map"></div>
     <footer class="footer">
         <div class="main-container">
-            <div class="footer__label">
-                <nav class="menu footer__menu">
-                    <ul class="menu__list">
-                        <li class="menu__list-item">
-                            <a class="link menu__list-link" href="#about">About</a>
-                        </li>
-                        <li class="menu__list-item">
-                            <a class="link menu__list-link" href="#projects">Projects</a>
-                        </li>
-                        <li class="menu__list-item">
-                            <a class="link menu__list-link" href="#blog">Blog</a>
-                        </li>
-                        <li class="menu__list-item">
-                            <a class="link menu__list-link" href="#contacts">Contacts</a>
-                        </li>
-                    </ul>
-                </nav>
+            <span class="footer__label">
+                <span class="footer__copyright">@Copyright</span>
                 <span class="footer__developer">Developed by NotFour</span>
             </div>
         </div>
     </footer>
 </div>
+<script src="js/progressBar.js"></script>
 <script src="js/script.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA7vAfPUnLBpuLbxw41HSuM4zsAGOKAcvw"></script>
+<script src="js/init.js"></script>
 </body>
 </html>

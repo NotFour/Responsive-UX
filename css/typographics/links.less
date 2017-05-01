@@ -1,3 +1,10 @@
+a {
+  text-decoration: underline;
+  &:focus {
+    outline: 2px solid @colorAlternative;
+  }
+}
+
 .link {
   text-decoration: none;
   cursor: pointer;
@@ -6,8 +13,5 @@
   transition: color 0.3s linear;
   &:hover {
     color: @colorMain;
-  }
-  &:focus {
-    outline: 2px solid @colorAlternative;
   }
 }
