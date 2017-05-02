@@ -1,3 +1,9 @@
+/*
+ *author: Developed by NotFour
+ */
+/*
+ *color styles
+ */
 @media screen and (min-width: 961px) {
   html {
     font-size: 62.5%;
@@ -27,7 +33,11 @@ img {
   max-width: 100%;
   height: auto;
 }
+/*
+ *styles for titles, paragraphs, links
+ */
 a {
+  color: #222;
   text-decoration: underline;
 }
 a:focus {
@@ -36,7 +46,6 @@ a:focus {
 .link {
   text-decoration: none;
   cursor: pointer;
-  color: #222;
   display: inline-block;
   transition: color 0.3s linear;
 }
@@ -84,6 +93,9 @@ p {
 p:last-child {
   margin-bottom: 0;
 }
+/*
+ *styles for page layout
+ */
 .page {
   min-height: 100vh;
   position: relative;
@@ -112,6 +124,7 @@ p:last-child {
   margin-bottom: 0;
   line-height: 1.1;
   margin-right: 1rem;
+  flex-shrink: 0;
 }
 .header__logo-name {
   font-size: 2.4rem;
@@ -243,6 +256,9 @@ p:last-child {
     padding-bottom: 2.3rem;
   }
 }
+/*
+ *styles for blocks
+ */
 .menu__list {
   list-style: none;
   padding-left: 0;
@@ -359,7 +375,6 @@ p:last-child {
     padding-bottom: 45px;
   }
   .banner__caption {
-    display: inline-block;
     font-size: 4.6rem;
     line-height: 7.5rem;
   }
@@ -370,14 +385,9 @@ p:last-child {
     vertical-align: middle;
   }
   .banner__caption {
-    width: 435px;
+    display: inline-block;
     vertical-align: middle;
     text-align: left;
-  }
-}
-@media screen and (min-width: 481px) and (max-width: 960px) {
-  .banner__caption {
-    width: 430px;
   }
 }
 @media screen and (max-width: 480px) {
@@ -387,9 +397,6 @@ p:last-child {
   }
   .banner__image {
     width: 60%;
-  }
-  .banner__preview {
-    text-align: center;
   }
   .banner__caption {
     display: block;
@@ -404,7 +411,6 @@ p:last-child {
 }
 .stat__value {
   overflow: hidden;
-  width: 100%;
   height: 3rem;
   background-color: #eee;
 }
@@ -531,7 +537,8 @@ p:last-child {
 .article__day {
   display: block;
   background-color: #eee;
-  line-height: 4.2rem;
+  padding-top: 11px;
+  padding-bottom: 11px;
 }
 .article__month {
   display: block;
@@ -549,13 +556,14 @@ p:last-child {
 }
 .article__addition {
   display: flex;
+  width: 100%;
   justify-content: space-between;
   align-items: baseline;
   margin-bottom: 1.5rem;
   font-size: 1.4rem;
-  line-height: 2rem;
 }
 .article__author {
+  flex-shrink: 0;
   margin-right: 1rem;
 }
 .adticle__addition-label {
