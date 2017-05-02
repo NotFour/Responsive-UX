@@ -1,11 +1,13 @@
 .section {
   box-shadow: inset 0 -1px 5px 0 @colorGray;
-  padding-bottom: 15px;
+  &:last-of-type {
+    box-shadow: none;
+  }
 }
 
 .section__title {
   box-shadow: 0 1px 0 0 @colorGray;
-  padding-bottom: 2rem
+  padding-bottom: 2rem;
 }
 
 .section__content {
@@ -16,6 +18,13 @@
 
 .section__about-stats {
   margin-bottom: 1.5rem;
+}
+
+.section__about-stat {
+  margin-bottom: 2.5rem;
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
 
 @media screen and(min-width: 481px) {
@@ -34,6 +43,7 @@
 
   .section {
     padding-top: 55px;
+    padding-bottom: 15px;
   }
 
   .section__content {
@@ -48,7 +58,8 @@
 @media screen and(max-width: 960px) {
 
   .section {
-    padding-top: 35px;
+    padding-top: 30px;
+    padding-bottom: 30px;
   }
 
   .section__title {
