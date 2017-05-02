@@ -1,20 +1,12 @@
-var toggle = document.getElementsByClassName('menu__toggle')[0];
-var menu = document.getElementsByClassName('menu')[0];
-var menuList = document.getElementsByClassName('menu__list')[0];
-var toggleInner = document.getElementsByClassName('menu__toggle-label')[0];
+var toggle = document.getElementsByClassName('mobile__toggle')[0];
+var menu = document.getElementsByClassName('mobile')[0];
 var html = document.getElementsByTagName('html')[0];
 toggle.onclick = function () {
-    if (menu.classList.contains('menu_active')) {
-        menuList.classList.remove('menu__list_active');
-        toggleInner.classList.remove('menu__toggle-label_active');
-        this.classList.remove('menu__toggle_active');
-        menu.classList.remove('menu_active');
+    if (menu.classList.contains('mobile_active')) {
+        menu.classList.remove('mobile_active');
         html.removeAttribute('style');
     } else {
-        menu.classList.add('menu_active');
-        this.classList.add('menu__toggle_active');
-        toggleInner.classList.add('menu__toggle-label_active');
-        menuList.classList.add('menu__list_active');
+        menu.classList.add('mobile_active');
         html.setAttribute('style', 'overflow:hidden');
     }
 };
