@@ -6,7 +6,6 @@
 
 .stat__value {
   overflow: hidden;
-  height: 3rem;
   background-color: @colorGray;
 }
 
@@ -38,6 +37,20 @@
 
 .stat__bar_yellow {
   background-color: @colorAlternative;
+}
+
+@media screen and(min-width: 961px) {
+
+  .stat__value {
+    height: 3rem;
+  }
+}
+
+@media screen and(max-width: 960px) {
+
+  .stat__value {
+    height: 2rem;
+  }
 }
 
 @keyframes bar_90 {

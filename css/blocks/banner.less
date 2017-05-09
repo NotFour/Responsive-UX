@@ -3,6 +3,10 @@
   text-align: center;
 }
 
+.banner__preview {
+  display: inline-block;
+}
+
 .banner__caption {
   font-style: italic;
   color: @colorWhite;
@@ -24,7 +28,6 @@
 @media screen and(min-width: 961px) {
 
   .banner__preview {
-    display: inline-block;
     vertical-align: middle;
   }
 
@@ -35,6 +38,13 @@
   }
 }
 
+@media screen and(max-width: 960px) {
+
+  .banner__caption {
+    display: block;
+  }
+}
+
 @media screen and(max-width: 480px) {
 
   .banner {
@@ -42,13 +52,12 @@
     padding-bottom: 20px;
   }
 
-  .banner__image {
+  .banner__preview {
     width: 60%;
   }
 
   .banner__caption {
-    display: block;
-    font-size: 3.5rem;
-    line-height: 6rem;
+    font-size: 3rem;
+    line-height: 4.5rem;
   }
 }

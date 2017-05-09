@@ -1,25 +1,20 @@
-var toggle = document.getElementsByClassName('mobile__toggle')[0];
-var menu = document.getElementsByClassName('mobile')[0];
+var toggle = document.getElementsByClassName('mobile-menu__toggle')[0];
+var menu = document.getElementsByClassName('mobile-menu')[0];
 var html = document.getElementsByTagName('html')[0];
 toggle.onclick = function () {
-    if (menu.classList.contains('mobile_active')) {
-        menu.classList.remove('mobile_active');
+    if (menu.classList.contains('mobile-menu_active')) {
+        menu.classList.remove('mobile-menu_active');
         html.removeAttribute('style');
     } else {
-        menu.classList.add('mobile_active');
+        menu.classList.add('mobile-menu_active');
         html.setAttribute('style', 'overflow:hidden');
     }
 };
-/*
-var menuLink = document.getElementsByClassName('menu__list-link');
+
+var menuLink = document.getElementsByClassName('mobile-menu__link');
 for (var i = 0; i < menuLink.size; i++) {
     menuLink[i].onclick = function () {
-        alert("click");
-        if (menu.classList.contains('menu_active')) {
-            menuList.classList.remove('menu__list_active');
-            toggleInner.classList.remove('menu__toggle-label_active');
-            this.classList.remove('menu__toggle_active');
-            menu.classList.remove('menu_active');
-        }
+        menu.classList.remove('mobile-menu_active');
+        html.removeAttribute('style');
     }
-}*/
+}
