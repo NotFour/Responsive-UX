@@ -39,10 +39,10 @@
   .mobile-menu__icon {
     border: 3px solid #fff;
     border-radius: 50%;
-    line-height: 10rem;
+    line-height: 8rem;
     margin-bottom: 2rem;
-    width: 10rem;
-    height: 10rem;
+    width: 8rem;
+    height: 8rem;
     box-sizing: border-box;
     &:before {
       width: 2rem;
@@ -52,6 +52,9 @@
 
   .mobile-menu__label {
     width: 100%;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
   }
 
   .mobile-menu_active {
@@ -122,6 +125,7 @@
 
   .mobile-menu__list-item {
     margin-right: 0;
+    width: 24%;
   }
 
   .mobile-menu__link {

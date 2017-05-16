@@ -101,11 +101,20 @@ p:last-child {
   min-height: 100vh;
   position: relative;
   box-sizing: border-box;
-  padding-bottom: 8.8rem;
+}
+@media screen and (min-width: 481px) {
+  .page {
+    padding-bottom: 5.2rem;
+  }
 }
 @media screen and (min-width: 961px) {
   .page {
     padding-top: 8.4rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .page {
+    padding-bottom: 10.6rem;
   }
 }
 .header {
@@ -161,17 +170,11 @@ p:last-child {
 .section:last-of-type {
   box-shadow: none;
 }
-.section__title {
-  padding-bottom: 2rem;
-}
 .section__content {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: flex-start;
-}
-.section__about-stats {
-  margin-bottom: 1.5rem;
 }
 .section__about-stat {
   margin-bottom: 2.5rem;
@@ -185,6 +188,7 @@ p:last-child {
     padding-bottom: 15px;
   }
   .section__title {
+    padding-bottom: 2rem;
     box-shadow: 0 1px 0 0 #eee;
     margin-bottom: 5.5rem;
   }
@@ -194,6 +198,7 @@ p:last-child {
   }
   .section__about-stats {
     width: 49.16666666666667%;
+    margin-bottom: 1.5rem;
   }
   .section__content {
     padding-bottom: 25px;
@@ -202,10 +207,9 @@ p:last-child {
 @media screen and (max-width: 960px) {
   .section {
     padding-top: 30px;
-    padding-bottom: 30px;
   }
   .section__title {
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
   }
   .section__about-content {
     width: 100%;
@@ -224,8 +228,18 @@ p:last-child {
   background-color: #3c3838;
   font-size: 1.4rem;
   color: #fff;
+  padding-top: 2rem;
+  padding-bottom: 1.5rem;
 }
 @media screen and (max-width: 480px) {
+  .footer {
+    text-align: center;
+  }
+  .footer__menu {
+    margin-bottom: 1.5rem;
+    padding-bottom: 2rem;
+    border-bottom: 2px solid;
+  }
   .footer__copyright {
     display: block;
     margin-bottom: .3rem;
@@ -235,21 +249,10 @@ p:last-child {
   }
 }
 @media screen and (min-width: 481px) {
-  .footer {
-    padding-top: 3.5rem;
-    padding-bottom: 3rem;
-  }
   .footer__content {
     display: flex;
     justify-content: space-between;
     align-items: center;
-  }
-}
-@media screen and (max-width: 480px) {
-  .footer {
-    text-align: center;
-    padding-top: 2.3rem;
-    padding-bottom: 2.3rem;
   }
 }
 /*
@@ -310,10 +313,10 @@ p:last-child {
   .mobile-menu__icon {
     border: 3px solid #fff;
     border-radius: 50%;
-    line-height: 10rem;
+    line-height: 8rem;
     margin-bottom: 2rem;
-    width: 10rem;
-    height: 10rem;
+    width: 8rem;
+    height: 8rem;
     box-sizing: border-box;
   }
   .mobile-menu__icon:before {
@@ -322,6 +325,9 @@ p:last-child {
   }
   .mobile-menu__label {
     width: 100%;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
   }
   .mobile-menu_active .mobile-menu__toggle {
     position: relative;
@@ -383,6 +389,7 @@ p:last-child {
   }
   .mobile-menu__list-item {
     margin-right: 0;
+    width: 24%;
   }
   .mobile-menu__link {
     color: #fff;
@@ -580,10 +587,7 @@ p:last-child {
   margin-top: 0;
 }
 .article__picture {
-  margin-bottom: 20px;
-}
-.article__title {
-  margin-bottom: 2.5rem;
+  margin-bottom: 2rem;
 }
 .article__date {
   text-align: center;
@@ -592,14 +596,8 @@ p:last-child {
 .article__addition {
   display: flex;
   width: 100%;
-  justify-content: space-between;
-  align-items: baseline;
-  margin-bottom: 1.5rem;
   font-size: 1.4rem;
-}
-.article__author {
-  flex-shrink: 0;
-  margin-right: 1rem;
+  flex-wrap: wrap;
 }
 .adticle__addition-label {
   display: inline-block;
@@ -632,6 +630,9 @@ p:last-child {
   background-image: url("../img/tag.svg");
 }
 @media screen and (min-width: 961px) {
+  .article__title {
+    margin-bottom: 2.5rem;
+  }
   .article__date {
     margin-right: 1rem;
     font-size: 1.4rem;
@@ -640,6 +641,14 @@ p:last-child {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+  }
+  .article__addition {
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+  }
+  .article__author {
+    flex-shrink: 0;
+    margin-right: 1rem;
   }
   .article__day {
     display: block;
@@ -677,6 +686,9 @@ p:last-child {
     align-items: flex-start;
     position: relative;
   }
+  .article__title {
+    margin-bottom: 1rem;
+  }
   .article__date {
     position: absolute;
     top: 0;
@@ -686,7 +698,12 @@ p:last-child {
     font-size: 1.6rem;
   }
   .article__addition {
-    order: 9999;
+    justify-content: center;
+    order: 1;
+  }
+  .article__author {
+    width: 100%;
+    text-align: center;
   }
 }
 @media screen and (max-width: 480px) {

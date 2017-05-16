@@ -12,7 +12,7 @@ toggle.onclick = function () {
 };
 
 var menuLink = document.getElementsByClassName('mobile-menu__link');
-for (var i = 0; i < menuLink.size; i++) {
+for (var i = 0; i < menuLink.length; i++) {
     menuLink[i].onclick = function () {
         menu.classList.remove('mobile-menu_active');
         html.removeAttribute('style');
