@@ -709,10 +709,12 @@ p:last-child {
 @media screen and (max-width: 480px) {
   .article {
     margin-top: 1.8rem;
+    padding-bottom: 1.8rem;
     box-shadow: 0 2px #eee;
   }
   .article:last-child {
     box-shadow: none;
+    padding-bottom: 0;
   }
 }
 .tag {
